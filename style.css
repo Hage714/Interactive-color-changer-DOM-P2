@@ -1,0 +1,38 @@
+.container{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.color-box{
+width: 400px; /* Adjust the value as per your requirement */
+height: 350px; 
+background-color: aquamarine;
+
+}
+
+#change-color-btn{
+    display: inline-block;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    padding: 15px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    border: none;
+    color: black
+  }
+  
+  #change-color-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  #change-color-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.5); /* Add custom focus outline */
+      }
+       
