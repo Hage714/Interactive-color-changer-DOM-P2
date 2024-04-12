@@ -1,8 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Your code to execute after DOM content is loaded goes here
-    console.log('DOM content loaded!');
-    // Example: Manipulate DOM elements, fetch data, etc.
+
+  document.addEventListener('DOMContentLoaded', function() {
+    //code that relies on the DOM being ready 
+    console.log("DOM content is loaded!");
+  
+    // Accessing an element by ID
+    const element = document.getElementById("change-color-btn");
+    if (element) {
+      element.textContent = "This content is loaded after DOM is ready";
+    } else {
+      console.error("Element with ID 'change-color-btn' not found!");
+    }
   });
+  
 
   document.addEventListener('DOMContentLoaded', function() {
     // Selecting button with class "color-box"
@@ -12,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonById = document.getElementById('change-color-btn');
     
     // Adding a click event listener to each button
-    buttonsByClass.forEach(color-box => {
-        color-box.addEventListener('click', function() {
+    buttonsByClass.forEach(x => {
+        x.addEventListener('click', function() {
         console.log('Button with class clicked');
       });
     });
@@ -22,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Button with id clicked');
     });
   });
+
   
   function getRandomColor() {
     // Generating random values for red, green, and blue
@@ -63,8 +73,8 @@ function getRandomColor() {
       const buttons = document.querySelectorAll('.color-box');
       
       // Changing background color of each button with class "button"
-      buttons.forEach(color-box => {
-        color-box.style.backgroundColor = randomColor;
+      buttons.forEach(y => {
+        y.style.backgroundColor = randomColor;
       });
     });
   });
