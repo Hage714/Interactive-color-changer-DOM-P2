@@ -48,7 +48,8 @@
     return color;
   }
   
-  // Example usage:
+
+  
   const randomColor = getRandomColor();
   console.log(randomColor); // Output a random color in hexadecimal format
 
